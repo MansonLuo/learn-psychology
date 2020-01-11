@@ -1,0 +1,369 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}Chapter 1: Intruduction: The Foundations of Psychology{% endblock %}
+
+{% block content %}
+
+			<h1>Chapter 1: Intruduction: The Foundations of Psychology</h1>
+			
+			<section id="previewQuiz">
+				<h2>PREVIEW QUIZ</h2>
+				
+				<p>
+					True or False:<br>
+					<ol>
+						<li>
+							T&nbsp;&nbsp;F&nbsp;&nbsp;现代心理学被定义为精神的科学(science of mind). F
+						</li>
+						<li>
+							T&nbsp;&nbsp;F&nbsp;&nbsp;科学心理学的目标是:(1) 描述(describle).(2)解释(explain).(3)预测(predict).(4)控制行为(control behavior).  F
+						</li>
+						<li>
+							T  F  弗洛伊德是精神分析(psychoanalysis)的主要奠基人。 T
+						</li>
+						<li>
+							生物(biological, adj, 生物的)观点假设大多数的行为可以通过后天习得。 T
+						</li>
+						<li>
+							T F  临床心理学(clinical psychology)强调(stress, v, 强调)心里治疗(psychotherapy， n, 心理治疗)和心理测试，其是心理学中一个单一大型的心理学分支。  T
+						</li>
+					</ol>
+				</p>
+			<section>
+				
+			<section id="objectives">
+				<h2>Objectives</h2>
+				
+				<p>
+					完成本章，你将学习到:<br>
+					<ul>
+						<li>
+							知道怎样定义心理学。
+						</li>
+						<li>
+							陈述(state, v, 陈述)科学化心理学的目标。
+						</li>
+						<li>
+							认识心理学五大经典学派，和它们的主要奠基人。
+						</li>
+						<li>
+							能够说出并解释用于分析行为的六大主要观点。
+						</li>
+						<li>
+							能够说出并详述心理学的七大重要领域。
+						</li>
+						
+					</ul>
+				</p>
+			</section>
+			
+			<section id="psychology-history">
+				<h2>Looking at the Word Psychology: From Ancient to Modern Meanings</h2>
+				
+				<p>
+					从古至今，心理学的含义一直在变。以下是现代心理学定义: 心理学是一门研究生物行为的科学(organism, n, 生物),Psychology is the science that studies the behavior of organisms。由该定义指导你学习本教材。
+				</p>
+				<p>
+					注意定义中的3个词(merit, vt, 值得): (1) science, (2) behavior, (3) organisms。现代心理学之所以被视为一门科学是因为其是基于系统化观察(systematic observations)所的到的数据(data)和信息的。在章节2会介绍系统化观察所使用到的调查方法(research methods)。
+				</p>
+				<p>
+					而词语behaviors有如下意义: (1) cognitive process(认知过程，) (2) emotional states(情感状态)， (3) action(动作)。认知过程是指生物体的想法。情感状态是指生物体的感受。而动作是指生物体做了什么。
+				</p>
+				<p>
+					生物体是指活的生物。因此(consequently, adv, 因此)，心理学可以正当地(legitimately, adv, 正当地)研究狗，老鼠(rats， n, 老鼠)和鸽子(pigeons, n, 鸽子)以及猴子。在心理学历史中，上述动物确实被拿来做实验。但是，一般，心理学主要以人类作为研究对象。当研究动物时，通常研究一些基础行为，比如学习和动机是如何在动物身上发生的，这有助于我们研究人类的行为(cast a light on, v, 醍醐灌顶)。
+				</p>
+				
+				<section class="multiple-choices-tests">
+					<p>
+						(a) What does psychology study?
+							{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(2) 构成行为的三个方面有哪些?
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: (a)生物体的行为， (b) 认知过程，情感状态， 动作。
+					</p>
+				</section>
+				
+				<p>
+					尽管现在你已经认识了现代心理学的定义，但是必须强调的是词汇心理学的古代释义和哲学有千丝万缕的关系(ancient, adj, 古代的。philosophy, n, 哲学)。希腊词汇psyche意味着soul(灵魂)。因此，对于生活在公元前(.B.C., n, 公元前)400到300期间的希腊哲学家来说，心理学就是去研究灵魂。该定义是由Socrates(苏格拉底),Plato(柏拉图), Aristotle(亚里士多德)首先提出的。实际上这些思想者，特别是苏格拉底和柏拉图，他们不相信动物有灵魂。这也可以解释为什么很多世纪以来，心理学家的主要研究对象是人类了(evident， adj, 显而易见的)。古代哲学家认为灵魂是意识(consciousness, n, 意识)的席位。灵魂使得思想生活成为可能(mental, adj, 精神的)。这也是为什么心理学有时候被称作精神生活的科学(science of the mind)。
+				</p>
+				<p>
+					实际上(indeed, adv, 实际上)， 该定义(心理学是精神生活的科学?)是由美国心理学家开山鼻祖William James首次提出的(dean, n, 开山鼻祖)。在一百多年前，这位大佬曾经在哈佛大学工作，是他将心理学定义为精神生活的科学。他相信心理学应该研究(investigate, v, 研究)精神过程，比如思考(thinking), 记忆(memory),和知觉(perception)。本章将会详细介绍James的观点。
+				</p>
+				<p>
+					以上便是心理学的历史。尽管现在心理学不在研究灵魂，但是它的历史丰富了当下心理学的研究方法，因为它强调了人类行为和认知(cognition, n， 认知)的重要性。
+				</p>
+				
+				<section class="multiple-choices-tests">
+					<p>
+						(a) 希腊词汇psyche以为着
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(b) William James将心理学定义为
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						answer: (a) soul (b) the science of mental life.
+					</p>
+				</section>
+				
+				<p>
+					当下(contemporary, adv, 当下地)，科学心理学有如下4个明确目标:(1) describe, (2) explain, (3) predict (4) control behavior。而这些也是我们日常生活中的常识性目标(common-sence, adj, 常识的)。举个例子，Jane告诉她的丈夫Harry他们的七岁的儿子Billy顽皮捣蛋(brat, n, 顽童)。这是对Billy的行为很好的描述吗?不是，太简单抽象了。换句话说，假设Jane说Billy拒绝做作业，并告诉她，"作业太愚蠢了，我再也不会做作业的。"。这构成(constitute, v, 构成)了一个相对较好的行为描述，因为其具体而明确。
+				</p>
+				<p>
+					其他类似的明确描述可能暗示两夫妻，Billy相较大多数儿童来说，行为反常。两夫妇可能会疑惑为什么Billy的行为越来越反常。是因为他沮丧吗?是因为他有自卑情节吗(inferiority complex, n, 自卑情节)?他自尊很低吗(self-esteem, n, 自尊)?他注意力缺乏混乱(Attention Deficit Disorder, n, 注意力缺乏混乱)?还是因为他脑中某种关键神经递质失衡(neorotransmitter, n, 神经递质)?还是他患有儿童神经官能症(childhood neurosis, n, 儿童神经官能症)?从上你可以看出，有大量潜在的解释。而这些解释需要我们一一求证。
+				</p>
+				<p>
+					而这就是预测和控制行为发挥效用的地方了。假设，家庭小儿科医生--海伦博士，建议说，Harry确实受苦于ADD。我们也假设海伦博士证实了Billy吃了太多带有精炼糖的食物,而这通过一系列的复杂生物化学反应造成Billy耗尽了某种神经递质(depletion, n, 耗尽)。她建议要改善伙食，多吃少糖的天然食品。这名医师(physician, n, 医师)预测，饮食的改变将会消除失常的症状(symptom, n, 症状)。
+				</p>
+				<p>
+					我们也假设，两夫妇改变了Billy的饮食，Billy也接受了(stick to, v , 坚持)。如果几周后，Billy的失常行为没有改变，那么海伦医师和两夫妇可以得出结论，上述解释不正确。换句话说，如果该饮食起效了(therapeutic， adj, 有疗效的)，Billy的失常行为变得受控，那么控制行为发生了。那么这种解释将会被认可(adequate, adj, 胜任的)。
+				</p>
+				
+				<section class="multiple-choices-tests">
+					<p>
+						科学心理学的四个目标是
+						{{ wtf.quick_form(form) }}
+					</p>
+					
+					<p>
+						answer: to describe, explain, predict, and control behavior.
+					</p>
+				</section>
+			</section>
+			
+			<section id="ClassicalSchoolsOfPsychology">
+				<h2>Classical Schools of Psychology: Five Great Thinkers And Their Ideas</h2>
+				
+				<p>
+					据说，心理学有很悠久的过去和短暂的历史。这句话应该这样理解: 尽管心理学起源和哲学息息相关，但是从科学学科(discipline, n, 学科)角度来看，现代心理学的年龄只有一百二十多年而已。之前提过，心理学的起源可以追溯到2400年前古希腊哲学家身上。但是科学心理学的开端一般是1879年，该年，德国科学家Wilhelm Wundt(威廉冯特)在德国莱比锡大学建立了首个心理学实验室
+				</p>
+				<p>
+					现代心理学出现于心理学各学派争鸣的环境下(schools of psychology)。可以将schools of psychology想象成一所挤满了鱼的学校。这样school和group类同。这样的话，一群鱼跟随一条领头鱼。每一个学派有领导者和追随者，以及一个主要观点和一些重要的假设。
+				</p>
+				
+				<section class="multiple-choices-tests">
+					<p>
+						(a) 作为一门科学学科，心理学有多少年历史?
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(b) 首个出现在1879年的心理学实验室由谁建立?
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						answer: (a) 120 (b) 威廉 温顿
+					</p>
+				</section>
+				
+				<p>
+					从历史角度来看，首个公开的心理学学派是构造主义(structuralism, n, 构造主义)。其创立人(founding personality, n, 奠基人)是威廉温顿(1832-1920)。之前提过，他建立了世界上第一个心理学实验室。温顿学习过生理学(physiology, n, 生理学)，该学科研究人体的功能(functions of body)。他厌倦了研究眼耳等这些感官的生理功能，但是对由与多个感官相关的感觉(sensation, n, 感觉)所组成的所谓人类意识(consciousness, n, 意识)更加感兴趣。
+				</p>
+				<p>
+					想象你正在看一幅风景油画(landscape, n, 风景)。你看到了树，河流，山谷，和天空。但是让我们能以视觉的方式来理解一幅画的最基本的知(sensation,n, 知觉。)，也就是最基本的构造块是什么呢?你的意识的结构是什么?而温顿以反省(introspection, n, 反省)的方式训练他的助手(assistant, n, 助手)。自我反省这种方式具有以下特点: 不关注整个刺激模式(stimulu, n, 刺激)(the whole pattern of stimulus)，而是只关注于刺激的基本部分。因此，一个受训的反省者不会说，"我看到一棵树。"，而是会说，"我看到一片绿。"，或者，"我看到一点棕色。"，等等。这些零星片段就是所谓的心理学原子(atom, n, 原子)，其组成了树或其他可视对象的复杂分子(molecule， n, 分子)。
+				</p>
+				<p>
+					温顿对视觉的研究表明只有三种基本可视化知觉。第一个是色调(hue, n, 色调)或者说颜色。第二个是亮度(brightness, n, 亮度)。比如，亮灰色卡片要比暗灰色卡片明亮。同样的，一打受强光照射的纸(intense, adj, 强烈的)要比受较弱光照射的纸要明亮。第三是饱和度(saturation, n, 饱和度)，是指颜色的丰富程度。
+				</p>
+				<p>
+					无论温顿研究什么可视化刺激，这些刺激的构成都逃不出上述三种基本可视化知觉。因此，温顿总结出，任何可视化经历都是由三种最基本的经历所构成(elemental experiences)。由此也可以推及到其他感觉，比如听觉， 味觉，触觉。(查看章节4)。
+				</p>
+				<p>
+					根据温顿的观点，心理学的主要目的是研究意识的结构。根据意识结构观点，温顿发现了一组知觉之间的关系，而这种关系产生了复杂的经历，这些经历被我们视为意识的精神生活。这种心理学方式被称作精神化学作用(mental chemistry, n, 精神化学作用)。之前提过，经历的原子是知觉(sensation, n, 知觉)。经验的分子就是我们复杂的想法(perception, n, 想法)。(<a href="{{ url_for('expand', topic_name='theDifferenceBetweenSensationAndPerception') }}">click here to show the difference between sensation and perception</a>)
+				</p>
+				<p>
+					温顿不仅被视为首个现代心理学家，而且还是理论心理学的奠基人。(很多萌新心理学学生认为这种荣耀应该归功于弗洛伊德，尽管弗洛伊德是最知名的心理学家，但是他占据了心理学不同于温顿的历史地位。)
+				</p>
+				
+				<section id="multiple-choices-tests">	
+					<p>
+					(a) Reporting a sensation alone without being confused by other sensations describes  what process?
+					{{ wtf.quick_form(form) }}
+					
+					(b) According to Wundt, the primary purpose of psychology is to study 
+					{{ wtf.quick_form(form) }}
+					</p>
+					
+					<p>
+						Answer: (a) introspection (b) The structure of consciousness.
+					</p>
+				</section>
+				
+				
+				<p>
+					William James(1842-1910), 其在1870年执教于哈佛，他追随了温顿的研究。James(詹姆斯)在哈佛创建了心理学实验室，他也在美国出版了首部心理学教科书The Principle of Psychology.该书出版于1890年，该年也可视为机能心理学(functionalism, n, 机能心理学)这个新心理学学派的诞生年。而詹姆斯则是该学派的主要创建者，据说他还是美国心理学的教父。
+				</p>
+				<p>
+					根据詹姆斯的观点，心理学应该更多专注于研究mind是怎样运作的，而这比mind是怎么构造的更重要。因此，詹姆斯强调研究以下过程，比如，思考，记忆，注意力等等。你也可以回想到，是詹姆斯将心理学定义为the science of metal life.这些定义正好映射了上述被强调的几个过程。
+				</p>
+				<p>
+					简而言之，机能心理学作为一门心理学学派，它断言心理学的主要任务是研究意识的运作和功能，而不是他的结构。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					According to James, psychology should be interested primarily in how the mind 
+					{{ wtf.quick_form(form) }}
+				</section>
+				
+				<p>
+					德国心理学家Max Wertheimer(麦克斯 韦特海默， 1880-1943)像詹姆斯一样，也对温顿的结构主义不爽。韦特海默坚信温顿过分强调知觉是想法的构建块会误人子弟。韦特海默为了捍卫他的观点，举了个例子。拿旋律来说(melody, n, 旋律)，旋律不仅仅只是数种知觉的混合。它是一种模版(pattern)。对旋律的观感(perception)G更多依赖于模版本身而不是一个个单独的音(notes, n, 音)。以F调演奏的旋律可以转换成C调，但是它任然是相同的旋律。然而，所有的音以及对这些音的知觉都完全变了。(倒不是说温顿的结构主义有错，而是他过分强调了意识结构的重要性。)
+				</p>
+				<p>
+					诱发(induce, v, 诱发)了一种复杂感受(perception)的普通模版，以德国单词Gestalt来描述。而Gestalt的概念可以和模版(pattern), 配置(configuration)以及管理体(organized whole)互换。
+				</p>
+				<p>
+					1910年， 韦特海默发表了一篇文章，这推动了(set forth, v, 推动)了格式塔心理学的发展，扩展了其基本假说，这也被视为该学派的诞生年。这篇文章公布了一系列实验，这些实验以他的朋友Kurt Koffka和Wolfgang Kohler作为研究对象。而他这两个朋友也像他一样成为了知名的格式塔心理学家。韦特海默展示了，当用一系列以合适时间间隔分隔的事件来提供稳定的(stationary, adj, 稳定的)刺激，那么运动感知(perception of motion, 运动感知)就会发生。这好像很复杂。然而，实际上它很简单。如果你以合适的速度来翻动(flip, v, 翻动)某本童话书的每一页，你会感觉运动好像是一系列静止的(still, adj, 静止的)图片在闪烁。在运动图片(motion picture)中感知运动也是一个道理。在知觉层次上，你看到了一系列静止的幻灯片(still slider, n, 静止的幻灯片)。而在感知层次(perception),你实际上在体验运动。由此可知，运动的存在不能以知觉的特性来解释。因此，他必须是感知的模版(pattern of perception),或者Gestalt,而这些诱发了(induce, v, 诱发)所感知到的运动(perceived motion)。
+				</p>
+				<p>
+					研究多种Gestalten(the plural of Gestalt)对于思考和认知的影响是格式塔心理学的目标。在章节6你会发现，Kohler 的研究将格式塔理论和顿悟学习(insight learning)联系到了一起。
+				</p>
+				<p>
+					简而言之，格式塔心理学断言刺激的模版或者配置对我们如何思考和感知周围的世界有巨大到的影响。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					<p>
+						(a) Three of the meaning of the Gestalt word Gestalt are
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(b) The goal of Gestalt psychology was the study the effects that various Gestalten have on 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: (a) pattern, configuration, and organized whole.<br>
+							(b) thinking and perciption
+					</p>
+				</section>
+				
+				<p>
+					回到美国，行为主义(behaviorism, n, 行为主义)是心理学第四大学派。它的创建人是John B.Watson(1878-1958)。在1915年，一浪高过一浪的对Watson思想的热衷(enthusiasm, n,  热衷)推动他成为了美国心理学协会的会长，这被视为行为主义的诞生年。由于watson先后在芝加哥大学和霍普金斯大学做过大量研究，他最终得出结论: 当前的心理学太强调意识的重要性了。实际上，他断言心理学根本不是精神的科学。意识(mind)是模糊的(mushy, adj, 模糊的)，难以定义的概念。它不能被科学所研究，因为它不能被观察。只有你自己知道你心里在想什么。根据Watson的研究，如果我说我在研究你的想法，那么这只能是猜测(guesswork, n, 猜测)。
+				</p>
+				<p>
+					因此，Watson断言心理学的目的应该去研究行为本身，而不是想法(mind)或者意识(consciousness)。一些对Watson不爽的批评家(critic, n, 批评家)说他完全否认了意识的存在。而有些人主要说他在研究中引入意识或者精神生活并不能对解释行为提供可信赖(solid, adj, 可信赖的)的解释。无论哪种说法，就当今来看，Watson的观点有点极端，被视为激进行为主义(radical behaviorism, n, 激进行为主义)，该主义是指一个心理学家不把意识当回事，也不在研究中使用意识。
+				</p>
+				<p>
+					然而行为主义在美国心理学界中一直很有影响力。在章节6你将看到，一个叫B.F.Skinner的心理学家受watson思想的激励，研究起了学习的过程。而Skinner经过一段时间后(in time, n, 经过一段时间后)成为了二十世纪最知名的心理学家之一。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					<p>
+						(a) Watson said that the mind can't be studied because it can't be 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(b) Behaviorisms asserts that the purpose of psychology should be to 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: (a) observed (b) study behavior itself, not the mind or consciousness
+					</p>
+				</section>
+				
+				<p>
+					为了识别第五大心理学学派，很有必要看看那个时候的欧洲大陆(continent, n, 大陆)，特别是澳大利亚；该学派是精神分析(psychoanalysis, n, 精神分析)。该学派创立者是西格蒙德-弗洛伊德(Sigmund Freud 1856-1939)。弗洛伊德是一名医学博士，其专长(specialty, n, 专长)于神经病学(neurology, n, 精神病学)。他的研究和发现主要基于他治疗病人的工作。在他职业生涯(career, n, 职业生涯)早期，他发现，又很多人患有神经症状，比如，中风(paralysis, n, 中风)(手部或脚部感到麻痹)，完全或部分失明，慢性头痛(chronic, adj, 慢性的)，以及一些没有器质性病理的(organic pathology, n, 器质性病理)疾病。上述这些疾病并不是生物疾病，而是由强烈的情感冲突(intense emotional conflicts， n, 强烈的情感冲突)所造成的症状(symptom, n, 症状)。
+				</p>
+				<p>
+					弗洛伊德最初的工作是和同事(colleague, n, 同事) Josef Breuer(1842-1925)一同完成的。弗洛伊德和Breuer一同完成的书籍"Studies on Hysteria(hysteria, n, 癔症)"，该书出版于1895年，这也是第一本关于精神分析的书籍，而该年可视为精神分析的诞生年。而完成这本书后，弗洛伊德就和Breuer分道扬镳了，后多年后才又和同事一起做研究。
+				</p>
+				<p>
+					词语hysteria是一个诊断标签(diagnostic label, n, 诊断标签)。这个标签用于描述那些在现实生活中不可能经历的虚幻神经症状的病人。而这类病人也并不是诈病(malingering, adj, 诈病的)。只是将由症状引起的幻觉当成了现实。在当下，这种症状被视为错乱，被称为躯体错乱-转变类型(somatoform disorder, conversion type)。这种症状意味着慢性焦虑(anxiety, n, 焦虑)已经转换成了身体上的表现。(希腊词语soma意味着身体)。
+				</p>
+				<p>
+					为了解释慢性情感痛苦(chronic emotional suffering),弗洛伊德断言人类具有潜意识精神生活。而这也是精神分析主要的假设。其他的假设都没有它重要。这种潜意识精神层次由叫做压抑(repression, n, 压抑)的防御机制所产生的。该机制的目的是保护自我免受心理威胁(threat, n, 威胁)，以及一些阻碍自我完整性(disturb, v, 阻碍; integrity, n, 完整性)的信息的伤害。(ego, 自我表示个性中的我，也就是自己的中心)。这类被压抑的情感信息大体可以归为以下三类:<br>
+						(1)痛苦的童年经历<br>
+						(2) 被禁止的性冲动<br>
+						(3) 被禁止的侵略冲动(aggressive, adj, 侵略的)
+				</p>
+				<p>
+					精神分析不仅仅只是一门心理学学派，也是一种心理治愈的方法。在第15章会介绍更多有关心理治愈的内容。弗洛伊德相信通过帮助病人探索他的潜意识精神层次的内容，他可以从情感痛苦中解脱。值得注意的是，在五大心理学学派中，只有心理分析学派在一开始就将提升个体精神健康视为己任。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					<p>
+						(a) Freud was a medical doctor with a specialty in 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(b) The principal assumption of psychoanalysis is that 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: (a) neurology (b) human beings has an unconscious mental life.
+					</p>
+				</section>
+			</section> <!-- END of first level topic of the classical schools of psychology -->
+				
+			<section id="waysOfApproachingTheStudyOfBehavior">
+				<h2>Ways of Approaching the study of Behavior: Searching for Explanations</h2>
+				
+				<p>
+					之前有提到过，科学心理学的目标之一是解释行为。当某人做某些事情时，特别是那些不期望的事情，我们脑海中立刻就会冒出来疑问: 他为什么要这么做。如果对于该问题的回答令我们称心满意，那么这个回答就是对该行为的解释。通常对于同一行为会有多种方法来解释，而一些方式不被理性思考者(rational, adj, 理性的)所认可。这也就造成了当下的对行为解释的不同观点，也是解释行为的最主要的一些观点。这些观点极大影响了如何完成研究，心理学家如何着手研究行为。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					<p>
+						Viewpoints in psychology are major ways 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: in which behavior can be explained.
+					</p>
+				</section>
+				
+				<p>
+					第一个观点是生物观点(biological viewpoint)。生物学观点行为可以按照以下因子来解释: 基因(genes, n, 基因)， 内分泌系统(endocrine system, n, 内分泌系统)，大脑和神经系统(nervous system, n, 神经系统)。生物学观点假设我们都是由原生质(protoplasm, n, 原生质)构成的生物体，最重要的解释就是认识到这一点的人。
+				</p>
+				<p>
+					假设一个小孩受难于智力迟钝(retardation, n, 迟延)。假设该小孩以唐氏综合症的方式来诊断，一系列标志和症状显示他除了正常人都有的21对染色体(chromosome, n, 染色体)以外，还存在一3个染色体。智力迟钝通常意味着染色体异常。因此，遗传变异给智力迟钝提供了可信的解释(genetic, adj, 遗传的)。
+				</p>
+				<p>
+					假设一个34岁的Jane C说:" I feel lazy",这句话看上去像是心理感受，如果之后她被证实她患有甲状腺(sluggish, adj, 行动缓慢的； thyroid gland, n, 甲状腺)分泌过低，以及基础新陈代谢过低，那么她的懒惰可以由较低的甲状腺分泌来解释。
+				</p>
+				<p>
+					Bill，是一个45岁的工程师，长期受慢性沮丧的折磨(depression, n, 沮丧)。如果最后他被证实，神经递质 serotonin的水平过低(serotonin是大脑中的化学信使)，那么可以给他开一些恢复神经递质serotonin到正常水平的精神病药(prescribe, v, 开处方药)。而他的慢性沮丧可以由大脑中的神经递质水平来解释。
+				</p>
+				<p>
+					一如你所见，生物学观点是一种强大和有用的观点。精神病学和生物心理学都非常喜欢这个观点。(physiological, adj, 生理学的)。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					<p>
+						The biological viewpoint asserts that behavior can be explained in terms of such factors as 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: 基因(genes), 内分泌系统(endocrine system), 大脑， 和神经系统(nervous systems).
+					<p>
+				</section>
+				
+				<p>
+					第二种观点是学习观点(learning viewpoint).学习观点假设很多，也许是绝大部分行为可以通过后天学习来形成。行为是通过经历来获得的(behaviors are acquired by experience.)。学习观点很大程度上受哲学家John Locke(1632-1704)的影响，这位大佬曾说过:"每个婴儿刚出生时都是心灵纯净，思想空白(tabula rasa, n, 白板)"。这意味着每一个念头想法都不是与生俱来的。
+				</p>
+				<p>
+					假设女子Opal每天抽两包烟，她自己认为这是一个坏习惯，而学习观点通过观察Opal的抽烟行为，也同意她这是日常行为(comonsence, adj, 常识性的)。而这种抽烟行为可以通过观察别人抽烟以及反复的增强(reinforcement, n, 增强)来形成。(在第六章中将会介绍更多有关观察和增强等这些过程)。
+				</p>
+				<p>
+					根据学习观点，不管是好习惯还是坏习惯都是可以通过经历来获得。通过学习我们可以获得的不仅仅只是习惯。我们通过学习来说一门新语言，我们可以学习生活态度，我们可以学习如何喜欢别人，厌恶别人，等等。学习在我们的日常生活中是广泛存在不断前进的过程。
+				</p>
+				
+				<section id="multiple-choices-tests">
+					<p>
+						(a) Locke said that the mind at birth is a tabula rasa or 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						(b) According to the learning viewpoint, both "good" and "bad" habits are 
+						{{ wtf.quick_form(form) }}
+					</p>
+					<p>
+						Answer: (a) blank slate(白板) (b) acquired by experience
+					</p>
+				</section>
+			</section> <!-- END of first level topic of ways of approaching the study of behavior -->
+{% endblock %}

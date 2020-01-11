@@ -1,0 +1,23 @@
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+div#content>div, div#content>section{
+	margin: 20vh auto;
+	border: solid 2px black;
+}
+
+div#content>div>div, div#content>section>section {
+	width: 90%;
+	margin: 5px auto;
+	border: dashed 2px black;
+}
+p {
+	text-indent: 25px; 
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
